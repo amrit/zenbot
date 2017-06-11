@@ -5,7 +5,7 @@ server:
     - /app/node_modules
   links:
     - mongodb
-  command: ./zenbot.sh trade --paper
+  command: ./zenbot.sh trade --paper --conf=ltc_conf.js
   restart: always
 
 mongodb:
